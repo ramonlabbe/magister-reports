@@ -2,7 +2,7 @@
 %author: Ricardo Soto [ricardo.soto@ucv.cl]
 
 \documentclass[11pt]{article}
-\usepackage[spanish]{babel}
+\usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \RequirePackage[a-1b]{pdfx}
 \usepackage[latin1,utf8]{inputenc}
@@ -28,10 +28,10 @@
 
 \begin{document}
 
-\renewcommand{\tablename}{Tabla}
+\renewcommand{\tablename}{Table}
 
 \thispagestyle{empty}
-\input{Portada/portada.tex}
+\input{Cover/cover.tex}
 
 \newpage
 \pagenumbering{roman}
@@ -39,7 +39,7 @@
 %%=============================================================================
 %% Abstract
 
-\input{Resumen/resumen.tex}
+\input{Abstract/abstract.tex}
 \newpage
 
 %%=============================================================================
@@ -52,14 +52,14 @@
 %%=============================================================================
 %% List of Figures
 
-\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\listfigurename}{List of Figures}
 \listoffigures
 \newpage
 
 %%=============================================================================
 %% List of Tables
 
-\renewcommand{\listtablename}{Lista de Tablas} 
+\renewcommand{\listtablename}{List of Tables} 
 \listoftables
 \newpage
 
@@ -68,24 +68,26 @@
 
 \pagenumbering{arabic}
 
-\section{Introducción}\label{sec:introduccion}
-  \input{Introduccion/introduccion.tex}
+\section{Introduction}\label{sec:introduction}
+  \input{Intro/intro.tex}
   \newpage
 
- \section{Capítulo 1}\label{sec:cap1}
-   \input{Capitulo_1/capitulo_1.tex}
+ \section{Chapter 1}\label{sec:chap1}
+   \input{Chapters/chapter_1.tex}
    \newpage
 
- \section{Capítulo 2}\label{sec:cap2}
-   \input{Capitulo_2/capitulo_2.tex}
+ \section{Chapter 2}\label{sec:chap2}
+   \input{Chapters/chapter_2.tex}
    \newpage
 
-
+   \section{Conclusion}\label{sec:chap2}
+   \input{Conclusion/conclusion.tex}
+   \newpage
 %%=============================================================================
 %% Biblio
 
-\bibliographystyle{plain}
-%\bibliographystyle{alpha}
+%\bibliographystyle{plain}
+\bibliographystyle{alpha}
 \bibliography{bibliography}	
 
 
